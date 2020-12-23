@@ -1,0 +1,84 @@
+<html>
+   <body>
+   
+      <h3>Setup</h3>
+	  
+	  <form action = "scriptSQLSetup.php" method = "POST">
+         <input type = "submit" />
+      </form>
+
+      <p><br></p>
+      <hr>
+      <p><br></p>
+
+      <h3>Registro</h3>
+	  
+	  <form action = "scriptSQLRegistroForm.php" method = "POST">
+         UPC: <input type = "text" name = "upc" />
+         Nome do Produto: <input type = "text" name = "prod" />
+         Estoque: <input type = "text" name = "estoque" />
+         Preço: <input type = "text" name = "preco" />
+         <input type = "submit" />
+      </form>
+   
+      <p><br></p>
+      <hr>
+      <p><br></p>
+
+      <h3>Consulta</h3>
+	  
+	  <form action = "scriptSQLConsultaCod.php" method = "POST">
+         UPC: <input type = "text" name = "upc" />
+         <input type = "submit" />
+      </form>
+   
+      <p><br></p>
+      <hr>
+      <p><br></p>
+
+      <h3>Alterar atributo</h3>
+	  
+	  <form action = "scriptSQLEdicao.php" method = "POST">
+         UPC: <input type = "text" name = "upc" />
+         <input type = "submit" />
+      </form>
+   
+      <p><br></p>
+      <hr>
+      <p><br></p>
+
+      <h3>MostraBD</h3>
+	  
+	  <form action = "scriptSQLMostraBD.php" method = "POST">
+         <input type = "submit" />
+      </form>
+   
+      <p><br></p>
+      <hr>
+      <p><br></p>
+
+	  <button type="button" onclick="testeGif()" align="center">Click Me!</button>
+
+	  <div class="imgbox" id="imgbox" align="center"> <br>
+		<img src="hourglass.gif" alt="Espere..." style="width:100px">
+	  </div>
+
+
+	  <script>
+		function testeGif(){
+			var isVisivel = document.getElementById("imgbox").style.visibility;
+			if (isVisivel == "hidden"){
+				document.getElementById("imgbox").style.visibility = "visible";
+			} else {
+				document.getElementById("imgbox").style.visibility = "hidden";
+			}
+		
+		}
+	  
+	  
+	  </script>
+
+
+
+   </body>
+</html>
